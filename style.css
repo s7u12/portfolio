@@ -40,18 +40,36 @@ muuttujien määrittelyn voi tehdä myös näin:
 h1 {
     color: black;
     font-family: Roboto, sans-serif;
-    font-weight: 50;
     font-style: normal;
     text-align: center;
-    font-size: 1.1em;
+    font-size: 1.5em;
 }
+
+
+h2 {
+    color: black;
+    font-family: Roboto, sans-serif;
+    font-style: normal;
+    text-align: center;
+    font-size: 1.2em;
+}
+
+
+h3 {
+    color: black;
+    font-family: Roboto, sans-serif;
+    font-style: normal;
+    text-align: center;
+    font-size: 1em;
+}
+
 
 .photo {
     width: 90%;
     max-width: 250px;
     display: block;
     margin: auto;
-    padding: 5px
+    padding: 5px;
 }
 
 /* mobiili*/
@@ -60,12 +78,11 @@ h1 {
     body {
         background-color: rgb(255, 255, 255);
     }
-
 }
 
 @media only screen and (min-width: 441px) {
     body {
-        background-color: rgb(203, 203, 255);
+        background-color: rgb(237, 237, 252);
 
         .flex_container {
             display: flex;
@@ -75,17 +92,19 @@ h1 {
             flex: 1
         }
     }
-
 }
 
 @media only screen and (min-width: 1200px) {
     body {
-        background-color: rgb(203, 203, 255);
+        background-color: rgb(247, 247, 247);
 
-        width: 1200px;
-        border: solid 1px;
-        margin: auto;
-        padding: 0 10px 0 10px;
+        margin:auto .flex_container {
+            display: flex;
+        }
+
+        .flex_item {
+            flex: 1
+        }
     }
 }
 
