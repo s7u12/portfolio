@@ -6,11 +6,11 @@ body {
     text-align: center;
 }
 
+
 header {
     width: 100%;
     background-color: rgb(1, 49, 96);
     text-align: center;
-    font-size: 1.1em;
     font-weight: bold;
     display: flex;
     justify-content: center;
@@ -74,6 +74,10 @@ h4 {
     font-size: 0.9em;
 }
 
+.flex_item {
+    list-style-position: inside;
+}
+
 .photo {
     width: 90%;
     max-width: 250px;
@@ -96,7 +100,7 @@ h4 {
         display: none;
         flex-direction: column;
         gap: 10px;
-        background-color: rgba(18, 107, 196, 0.95);
+        background-color: rgba(1, 48, 96, 0.76);
         position: absolute;
         top: 50px;
         right: 10px;
@@ -145,6 +149,7 @@ footer {
     background-color: rgb(1, 49, 96);
     color: white;
     text-align: center;
+    margin-top: auto;
 }
 
 a:link {
