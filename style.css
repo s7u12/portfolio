@@ -9,14 +9,12 @@ body {
 }
 
 header {
-    top: 0;
-    left: 0;
-    right: 0;
+
     width: 100%;
-    background-color: honeydew;
+    background-color: rgb(46, 117, 233);
     text-align: center;
     color: rgb(46, 117, 233);
-    font-size: 1.2em;
+    font-size: 1.1em;
     display: block;
     font-weight: bold;
 }
@@ -64,6 +62,16 @@ h3 {
 }
 
 
+
+h4 {
+    color: black;
+    font-family: Roboto, sans-serif;
+    font-style: normal;
+    text-align: center;
+    font-style: italic;
+    font-size: 0.5em;
+}
+
 .photo {
     width: 90%;
     max-width: 250px;
@@ -108,7 +116,7 @@ h3 {
     }
 }
 
-.footer {
+footer {
     position: fixed;
     left: 0;
     bottom: 0;
@@ -124,7 +132,7 @@ a:link {
 }
 
 a:visited {
-    color: rgba(255, 60, 60, 0.862);
+    color: rgba(248, 99, 99, 0.848);
 }
 
 a:hover {
