@@ -17,8 +17,6 @@ header {
     color: #fff;
 }
 
-/* background-color: rgb(46, 117, 233); */
-
 .navbar {
     display: flex;
     justify-content: space-between;
@@ -54,16 +52,16 @@ h2,
 h3,
 h4 {
     color: black;
-    font-family: Roboto, sans-serif;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     text-align: center;
 }
 
 h1 {
-    font-size: 1.5em;
+    font-size: 2em;
 }
 
 h2 {
-    font-size: 1.1em;
+    font-size: 1.5em;
 }
 
 h3 {
