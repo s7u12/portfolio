@@ -2,37 +2,36 @@
 <html lang="en">
 
 <head>
-
   <title>Suvi | Home</title>
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta charset="UTF-8">
   <meta name="author" content="Suvi">
-  <meta name="description" content="Tech talent portfolio of Suvi Laine">
+  <meta name="description" content="Tech talent portfolio by Suvi">
   <meta name="keywords" content="portfolio,HTML,UX student,IT trainee">
 
   <link href="style.css" rel="stylesheet" type="text/css">
 </head>
 
-
-
 <body>
-
   <header>
+    <nav class="navbar">
+      <div class="menu-icon" id="menu-icon">&#9776;</div>
 
-    <nav>
-      <a href="index.html">HOME</a> |
-      <a href="cv.html">CV</a> |
-      <a href="funfacts.html">FUN FACTS</a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="cv.html">CV</a></li>
+        <li><a href="funfacts.html">Fun facts</a></li>
+      </ul>
     </nav>
   </header>
 
   <main>
-    <h1>Welcome to my portfolio</h1>
+    <h1>Welcome to Suvi's portfolio</h1>
 
-    <p>Hello! My name is Suvi. I designed and developed this digital portfolio as my first step into the world of CSS
+    <p>I built this web page as my first step into the world of CSS
       and UX
-      design. </p>
+      design while also learning more about HTML and JavaScript. </p>
     <p>Feel free to explore my pages and follow along as I continue to practice coding and refine my skills in
       creating digital experiences.</p>
 
@@ -42,52 +41,53 @@
         <h2>Who is Suvi?</h2>
 
         <ul>
-          <li>Business IT student</li>
-          <li>Based in Helsinki</li>
-          <li>Linguistics enthusiast</li>
-          <li>Beginner crossfitter</li>
-          <li>Tourism professional</li>
-          <li>Looking for a career transition</li>
+          <li>business IT student</li>
+          <li>based in Helsinki</li>
+          <li>linguistics enthusiast</li>
+          <li>beginner crossfitter</li>
+          <li>tourism professional</li>
         </ul>
 
 
         <img src="kuvat/portrait.png" alt="portrait" class="photo">
-        <h4>A portrait of me in my comfort zone, generated with Pixlr-AI:</h4>
+        <h4>A portrait of me in my comfort zone (by Pixlr-AI)</h4>
 
       </div>
       <div class="flex_item">
 
         <h2>Suvi's skills</h2>
-        <p>If you are curious about my education background or work experience, click <a href="cv.html">here</a>
+        <p>I'm currently looking for a career transition. If you are curious about my education background or work
+          experience, click <a href="cv.html">here</a>
           to explore my CV page.</p>
-
 
         <div>
           <h2>The fun part</h2>
-          <p>Since there is more to life than work and studies, I built one more page, <a href=funfacts.html> take a
-              look</a>.
+          <p>Since there is more to life than work and studies, I also built a page for the fun stuff.
             That one is dedicated to sharing fun facts and random musings. It also serves as a sandbox for my
-            future coding projects.</p>
-
+            future (coding) projects. <a href=funfacts.html>Take a
+              look</a>.</p>
         </div>
-
       </div>
     </div>
 
     <p>Stay tuned for updates &#9829;_&#9829;</p>
 
-
-
-
   </main>
-
-  <!-- KORJAA FOOTER NÄKYMÄÄN KOKO BODYTEKSTIN JÄLKEEN -->
 
   <footer>
     <p> Contact me
       <a href="https://www.linkedin.com/in/suvi-laine-60857437/">via LinkedIn</a>
     </p>
   </footer>
+
+  <script>
+    const menuIcon = document.getElementById('menu-icon');
+    const navLinks = document.querySelector('.nav-links');
+
+    menuIcon.addEventListener('click', () => {
+      navLinks.classList.toggle('active');
+    });
+  </script>
 
 </body>
 

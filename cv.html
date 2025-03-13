@@ -2,31 +2,61 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" contenct="Suvi">
     <title>Suvi | CV</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <meta name="author" content="Suvi">
+    <meta name="description" content="Tech talent CV">
+    <meta name="keywords" content="portfolio,CV,HTML,UX student,IT trainee">
+
     <link href="style.css" rel="stylesheet" type="text/css">
 </head>
 
 <body>
-    <p>* Under construction* </p>
+    <header>
+        <nav class="navbar">
+            <div class="menu-icon" id="menu-icon">&#9776;</div>
 
-    <h1>Suvi's CV</h1>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="cv.html">CV</a></li>
+                <li><a href="funfacts.html">Fun facts</a></li>
+            </ul>
+        </nav>
+    </header>
 
-    <p> Below you can learn more about my professional history. This CV was last updated in March 2025.
+    <main>
+        <h1>Suvi's CV</h1>
 
+        <p>I will summarize my most relevant work history here.</p>
 
-    <p>(tähän kuva CVwithoutcontacts.jpg )</p>
+        <h2>CV</h2>
 
+        * coming soon *
 
-    You can also download a pdf version of this CV by clicking here.
+        <p>(updated in March 2025)</p>
 
-    <p> *linkki pdf-tiedoston lataamiseen* </p>
+        <h2>Future plans</h2>
 
-    <p> Meanwhile you can check my work experience from
-        <a href="https://www.linkedin.com/in/suvi-laine-60857437/">LinkedIn</a>
-    </p>
+        <p>By the end of my studies I plan on landing a solid tech job in Finland.</p>
+
+    </main>
+
+    <footer>
+        <p> Contact me
+            <a href="https://www.linkedin.com/in/suvi-laine-60857437/">via LinkedIn</a>
+        </p>
+    </footer>
+
+    <script>
+        const menuIcon = document.getElementById('menu-icon');
+        const navLinks = document.querySelector('.nav-links');
+
+        menuIcon.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+    </script>
 
 </body>
 

@@ -1,75 +1,79 @@
 body {
-
     color: black;
     background-color: rgba(230, 230, 230, 0.245);
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 18px;
+    font-size: 16px;
     text-align: center;
-
 }
 
 header {
-
     width: 100%;
-    background-color: rgb(46, 117, 233);
+    background-color: rgb(1, 49, 96);
     text-align: center;
-    color: rgb(46, 117, 233);
     font-size: 1.1em;
-    display: block;
     font-weight: bold;
+    display: flex;
+    justify-content: center;
+    color: #fff;
 }
 
-/*
-laatikko who is:
-background-color: #fffedd;
-padding: 20px;
-margin-left: 2%;
-border: solid rgba(56, 20, 0, 0.385) 1.5px;
+/* background-color: rgb(46, 117, 233); */
 
-muuttujien määrittelyn voi tehdä myös näin:
-
-: root {
---primary-color: ;
---secondary-color: ;
---font-size:20px;
-}
-*/
-
-h1 {
-    color: black;
-    font-family: Roboto, sans-serif;
-    font-style: normal;
-    text-align: center;
-    font-size: 1.5em;
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 10px;
 }
 
-
-h2 {
-    color: black;
-    font-family: Roboto, sans-serif;
-    font-style: normal;
-    text-align: center;
-    font-size: 1.2em;
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 15px;
 }
 
-
-h3 {
-    color: black;
-    font-family: Roboto, sans-serif;
-    font-style: normal;
-    text-align: center;
-    font-size: 1em;
+.nav-links li a {
+    text-decoration: none;
+    color: white;
+    transition: color 0.3s;
 }
 
+.nav-links li a:hover {
+    color: rgba(255, 105, 180, 0.937);
+}
 
+.menu-icon {
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+}
 
+h1,
+h2,
+h3,
 h4 {
     color: black;
     font-family: Roboto, sans-serif;
-    font-style: normal;
     text-align: center;
+}
+
+h1 {
+    font-size: 1.5em;
+}
+
+h2 {
+    font-size: 1.1em;
+}
+
+h3 {
+    font-size: 1em;
+}
+
+h4 {
     font-style: italic;
-    font-size: 0.5em;
+    font-weight: normal;
+    font-size: 0.9em;
 }
 
 .photo {
@@ -77,14 +81,33 @@ h4 {
     max-width: 250px;
     display: block;
     margin: auto;
-    padding: 5px;
+    padding: 0.5em;
 }
 
-/* mobiili*/
 @media only screen and (max-width:440px) {
 
     body {
         background-color: rgb(255, 255, 255);
+    }
+
+    .menu-icon {
+        display: block;
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        gap: 10px;
+        background-color: rgba(18, 107, 196, 0.95);
+        position: absolute;
+        top: 50px;
+        right: 10px;
+        padding: 15px;
+        border-radius: 5px;
+    }
+
+    .nav-links.active {
+        display: flex;
     }
 }
 
@@ -121,7 +144,7 @@ footer {
     left: 0;
     bottom: 0;
     width: 100%;
-    background-color: rgb(46, 117, 233);
+    background-color: rgb(1, 49, 96);
     color: white;
     text-align: center;
 }
@@ -132,7 +155,7 @@ a:link {
 }
 
 a:visited {
-    color: rgba(248, 99, 99, 0.848);
+    color: rgba(254, 170, 170, 0.848);
 }
 
 a:hover {
@@ -140,5 +163,5 @@ a:hover {
 }
 
 a:active {
-    color: blue;
+    color: rgb(7, 7, 36);
 }

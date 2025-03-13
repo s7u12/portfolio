@@ -2,43 +2,59 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" contenct="Suvi">
     <title>Suvi | Fun Facts</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <meta name="author" content="Suvi">
+    <meta name="description" content="Tech talent fun facts">
+    <meta name="keywords" content="sandbox">
+
     <link href="style.css" rel="stylesheet" type="text/css">
 </head>
 
-<header>
-    <div class="header">
-        <nav>
-            <a href="index.html">HOME</a> |
-            <a href="cv.html">CV</a> |
-            <a href="funfacts.html">FUN FACTS</a>
-        </nav>
-    </div>
-</header>
-
 <body>
+    <header>
+        <nav class="navbar">
+            <div class="menu-icon" id="menu-icon">&#9776;</div>
 
-    <p>* Under construction* </p>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="cv.html">CV</a></li>
+                <li><a href="funfacts.html">Fun facts</a></li>
+            </ul>
+        </nav>
+    </header>
 
-    <h1>Fun facts</h1>
+    <main>
+        <h1>Fun facts</h1>
 
-    <p>I will use this page as a sandbox.</p>
+        <p>I will use this page as a sandbox for my future projects.</p>
+        <p>While I'm working on it, here's a bunch of pictures that have a special meaning to me.
+        <p>The last one is a bonus pic I made in MS Paint in 30 seconds. Enjoy!</p>
 
+        <img src="kuvat/jeux_blur.jpg" alt="pelit" class="photo">
+        <img src="kuvat/palmut.jpg" alt="palmu" class="photo">
+        <img src="kuvat/wow.png" alt="paint" class="photo">
 
-    <img src="kuvat/jeux_blur.jpg" alt="pelit" class="photo">
+        <p>Ps. <a href="https://www.youtube.com/watch?v=A7_Rkvi3nDk">This song</a> is currently stuck in my head on
+            repeat.</p>
+    </main>
 
-    <img src="kuvat/palmut.jpg" alt="palmu" class="photo">
+    <footer>
+        <p> Contact me
+            <a href="https://www.linkedin.com/in/suvi-laine-60857437/">via LinkedIn</a>
+        </p>
+    </footer>
 
-    <img src="kuvat/logo.png" alt="paint" class="photo">
+    <script>
+        const menuIcon = document.getElementById('menu-icon');
+        const navLinks = document.querySelector('.nav-links');
 
-    <p><a href="https://www.youtube.com/watch?v=A7_Rkvi3nDk">This song</a>
-        is currently stuck in my head on repeat.</p>
-
-    <br><br><br><br>
-
+        menuIcon.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+    </script>
 
 </body>
 
