@@ -16,7 +16,7 @@ header {
     font-size: 20px;
     font-weight: bold;
     display: flex;
-    color: #fff;
+    color: #ededfc;
 }
 
 .caption {
@@ -24,7 +24,7 @@ header {
 }
 
 .highlight {
-    color: rgb(237, 24, 130);
+    color: #ed1882;
 }
 
 .navbar {
@@ -43,12 +43,12 @@ header {
 
 .nav-links li a {
     text-decoration: none;
-    color: white;
+    color: #ededfc;
     transition: color 0.3s;
 }
 
 .nav-links li a:hover {
-    color: rgba(245, 62, 153);
+    color: #f53e99;
 }
 
 .menu-icon {
@@ -78,7 +78,6 @@ h3 {
 }
 
 .flex_item {
-
     list-style-position: inside;
 }
 
@@ -90,10 +89,27 @@ h3 {
     padding: 0.5em;
 }
 
+a:link {
+    color: #8b4cd2;
+    font-weight: bold;
+}
+
+a:visited {
+    color: #ca2376;
+}
+
+a:hover {
+    color: #f53e99;
+}
+
+a:active {
+    color: #070724;
+}
+
 @media only screen and (max-width:440px) {
 
     body {
-        background-color: rgb(255, 255, 255);
+        background-color: #ffffff;
     }
 
     .menu-icon {
@@ -104,7 +120,7 @@ h3 {
         display: none;
         flex-direction: column;
         gap: 10px;
-        background-color: rgba(1, 48, 96, 0.893);
+        background-color: #013060;
         position: absolute;
         top: 50px;
         right: 10px;
@@ -117,26 +133,9 @@ h3 {
     }
 }
 
-a:link {
-    color: rgb(139, 76, 210);
-    font-weight: bold;
-}
-
-a:visited {
-    color: rgba(245, 62, 153);
-}
-
-a:hover {
-    color: rgba(245, 62, 153);
-}
-
-a:active {
-    color: rgb(7, 7, 36);
-}
-
 @media only screen and (min-width: 441px) {
     body {
-        background-color: rgb(237, 237, 252);
+        background-color: #ededfc;
     }
 
     .flex_container {
@@ -150,7 +149,7 @@ a:active {
 
 @media only screen and (min-width: 1200px) {
     body {
-        background-color: rgb(247, 247, 247);
+        background-color: #f7f7f7;
         margin: auto;
     }
 }
@@ -161,8 +160,21 @@ footer {
     right: 0;
     bottom: 0;
     width: 100%;
-    background-color: rgb(1, 49, 96);
-    color: white;
+    background-color: #013160;
+    color: #ededfc;
     text-align: center;
     margin-top: auto;
+}
+
+footer a:link {
+    color: #ededfc;
+    font-weight: bold;
+}
+
+footer a:visited {
+    color: #d5c6f3;
+}
+
+footer a:hover {
+    color: #ffa6d3
 }
