@@ -19,6 +19,10 @@ header {
     color: #fff;
 }
 
+.caption {
+    font-size: 0.9em;
+}
+
 .highlight {
     color: rgb(237, 24, 130);
 }
@@ -44,7 +48,7 @@ header {
 }
 
 .nav-links li a:hover {
-    color: (245, 62, 153);
+    color: rgba(245, 62, 153);
 }
 
 .menu-icon {
@@ -55,8 +59,7 @@ header {
 
 h1,
 h2,
-h3,
-h4 {
+h3 {
     color: black;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     text-align: center;
@@ -72,12 +75,6 @@ h2 {
 
 h3 {
     font-size: 1em;
-}
-
-h4 {
-    font-style: italic;
-    font-weight: normal;
-    font-size: 0.9em;
 }
 
 .flex_item {
@@ -121,7 +118,7 @@ h4 {
 }
 
 a:link {
-    color: rgb(155, 132, 255);
+    color: rgb(139, 76, 210);
     font-weight: bold;
 }
 
