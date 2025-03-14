@@ -121,16 +121,16 @@ h4 {
 }
 
 a:link {
-    color: rgb(170, 153, 247);
+    color: rgb(155, 132, 255);
     font-weight: bold;
 }
 
 a:visited {
-    color: rgba(254, 170, 170, 0.848);
+    color: rgba(245, 62, 153);
 }
 
 a:hover {
-    color: rgba(245, 62, 153, 0.937);
+    color: rgba(245, 62, 153);
 }
 
 a:active {
