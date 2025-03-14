@@ -6,15 +6,21 @@ body {
     text-align: center;
 }
 
-
 header {
+    top: 0;
+    left: 0;
+    right: 0;
     width: 100%;
     background-color: rgb(1, 49, 96);
     text-align: center;
+    font-size: 20px;
     font-weight: bold;
     display: flex;
-    justify-content: center;
     color: #fff;
+}
+
+.highlight {
+    color: rgba(245, 62, 153, 0.937);
 }
 
 .navbar {
@@ -38,7 +44,7 @@ header {
 }
 
 .nav-links li a:hover {
-    color: rgba(255, 105, 180, 0.937);
+    color: rgba(245, 62, 153, 0.937);
 }
 
 .menu-icon {
@@ -75,6 +81,7 @@ h4 {
 }
 
 .flex_item {
+
     list-style-position: inside;
 }
 
@@ -100,7 +107,7 @@ h4 {
         display: none;
         flex-direction: column;
         gap: 10px;
-        background-color: rgba(1, 48, 96, 0.76);
+        background-color: rgba(1, 48, 96, 0.893);
         position: absolute;
         top: 50px;
         right: 10px;
@@ -113,45 +120,6 @@ h4 {
     }
 }
 
-@media only screen and (min-width: 441px) {
-    body {
-        background-color: rgb(237, 237, 252);
-
-        .flex_container {
-            display: flex;
-        }
-
-        .flex_item {
-            flex: 1
-        }
-    }
-}
-
-@media only screen and (min-width: 1200px) {
-    body {
-        background-color: rgb(247, 247, 247);
-
-        margin:auto .flex_container {
-            display: flex;
-        }
-
-        .flex_item {
-            flex: 1
-        }
-    }
-}
-
-footer {
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    background-color: rgb(1, 49, 96);
-    color: white;
-    text-align: center;
-    margin-top: auto;
-}
-
 a:link {
     color: rgb(170, 153, 247);
     font-weight: bold;
@@ -162,9 +130,42 @@ a:visited {
 }
 
 a:hover {
-    color: rgba(255, 105, 180, 0.937);
+    color: rgba(245, 62, 153, 0.937);
 }
 
 a:active {
     color: rgb(7, 7, 36);
+}
+
+@media only screen and (min-width: 441px) {
+    body {
+        background-color: rgb(237, 237, 252);
+    }
+
+    .flex_container {
+        display: flex;
+    }
+
+    .flex_item {
+        flex: 1;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    body {
+        background-color: rgb(247, 247, 247);
+        margin: auto;
+    }
+}
+
+footer {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: rgb(1, 49, 96);
+    color: white;
+    text-align: center;
+    margin-top: auto;
 }
