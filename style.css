@@ -1,6 +1,6 @@
 body {
     color: black;
-    background-color: rgba(230, 230, 230, 0.245);
+    background-color: rgba(230, 230, 230, 0.418);
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 16px;
     text-align: center;
@@ -20,7 +20,7 @@ header {
 }
 
 .highlight {
-    color: rgba(245, 62, 153, 0.937);
+    color: rgb(237, 24, 130);
 }
 
 .navbar {
@@ -44,7 +44,7 @@ header {
 }
 
 .nav-links li a:hover {
-    color: rgba(245, 62, 153, 0.937);
+    color: (245, 62, 153);
 }
 
 .menu-icon {
