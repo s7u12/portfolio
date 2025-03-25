@@ -1,9 +1,10 @@
 body {
     color: black;
-    background-color: rgba(230, 230, 230, 0.418);
+    background-color: white;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 16px;
     text-align: center;
+    list-style-type: inherit
 }
 
 header {
@@ -16,11 +17,12 @@ header {
     font-size: 20px;
     font-weight: bold;
     display: flex;
-    color: #ededfc;
+    color: white;
 }
 
 .caption {
     font-size: 0.9em;
+    font-style: italic;
 }
 
 .highlight {
@@ -79,6 +81,9 @@ h3 {
 
 .flex_item {
     list-style-position: inside;
+    justify-content: left;
+    flex-direction: column;
+    background-color: #f3f3f3
 }
 
 .photo {
@@ -87,6 +92,7 @@ h3 {
     display: block;
     margin: auto;
     padding: 0.5em;
+    text-align: center;
 }
 
 a:link {
@@ -108,10 +114,6 @@ a:active {
 
 @media only screen and (max-width:440px) {
 
-    body {
-        background-color: #ffffff;
-    }
-
     .menu-icon {
         display: block;
     }
@@ -131,12 +133,21 @@ a:active {
     .nav-links.active {
         display: flex;
     }
+
+    .flex_container {
+        display: flex;
+        justify-content: left;
+        flex-direction: column;
+        text-align: left;
+    }
+
+    ul {
+        list-style-type: disc;
+        margin: auto;
+    }
 }
 
 @media only screen and (min-width: 441px) {
-    body {
-        background-color: #ededfc;
-    }
 
     .flex_container {
         display: flex;
@@ -149,7 +160,6 @@ a:active {
 
 @media only screen and (min-width: 1200px) {
     body {
-        background-color: #f7f7f7;
         margin: auto;
     }
 }
@@ -167,7 +177,7 @@ footer {
 }
 
 footer a:link {
-    color: #ededfc;
+    color: white;
     font-weight: bold;
 }
 
